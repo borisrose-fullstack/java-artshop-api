@@ -1,0 +1,33 @@
+@host = http://localhost:8080/products/add
+
+
+
+
+
+POST {{host}}
+Content-Type: application/json
+Authorization: Bearer 
+
+{
+    "name":"Corn Girl",
+    "description":"Portrait of a young woman looking to the left",
+    "url":"https://cdn.pixabay.com/photo/2019/05/04/15/24/woman-4178302_1280.jpg",
+    "price":300.0,
+    "author":"Martina Bulkova"
+}
+
+
+@token = eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJzZWxmIiwic3ViIjoiYm9yaXNAZ21haWwuY29tIiwiZXhwIjoxNzE0ODk2MjIwLCJpYXQiOjE3MTQ4MDk4MjB9.fjjczcCp_ngLRjXGfGD9vKcyRDxicPv6RH8YoyNKSqs
+
+###
+POST {{host}}
+Content-Type: application/json
+
+
+{
+    "name":"Lion in the forest",
+    "description":"The lion is looking at something but what ?",
+    "url":"https://cdn.pixabay.com/photo/2023/12/07/19/45/tiger-8436227_1280.jpg",
+    "price":300.0,
+    "author":"Photo Shop Art"
+}
